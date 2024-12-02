@@ -8,7 +8,7 @@ terraform {
     key            = "raghava/terraform.tfstate" 
     region         = "us-east-1"          # AWS region
     encrypt        = true                  # Enable encryption for state file
-    dynamodb_table = "raghava-table"  # DynamoDB table for locking
+    dynamodb_table = "tejaa.it"  # DynamoDB table for locking
     
   }
 }
