@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket         = "raghu-technology-190"  
-    name           = "raghava" 
+    name           = "raghava/terraform.tfstate" 
     region         = "us-east-1"          # AWS region
     encrypt        = true                  # Enable encryption for state file
     dynamodb_table = "raghava-table"  # DynamoDB table for locking
