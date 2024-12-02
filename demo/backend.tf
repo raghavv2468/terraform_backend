@@ -5,11 +5,11 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket         = "raghu-technology-190"  
-    name           = "raghava/terraform.tfstate" 
+    key            = "raghava/terraform.tfstate" 
     region         = "us-east-1"          # AWS region
     encrypt        = true                  # Enable encryption for state file
     dynamodb_table = "raghava-table"  # DynamoDB table for locking
-    acl            = "private"  # Access control for state file
+    
   }
 }
 
